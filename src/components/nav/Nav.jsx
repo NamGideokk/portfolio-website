@@ -4,6 +4,7 @@ import { GrHome } from "react-icons/gr";
 import { FiUser } from "react-icons/fi";
 import { BiBook } from "react-icons/bi";
 import { BiMessageSquareDots } from "react-icons/bi";
+import { BiNote } from "react-icons/bi";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
@@ -35,6 +36,15 @@ const Nav = () => {
         }}
       >
         <BiBook />
+      </a>
+      <a
+        href="#portfolio"
+        className={activeNav === "#portfolio" ? "active" : ""}
+        onClick={() => {
+          setActiveNav("#portfolio");
+        }}
+      >
+        <BiNote />
       </a>
       <a
         href="#contact"
