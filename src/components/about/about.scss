@@ -24,9 +24,10 @@
   overflow: hidden;
   transform: rotate(10deg);
   transition: 0.3s;
-}
-.about__me-image:hover {
-  transform: rotate(0deg);
+
+  :hover {
+    transform: rotate(0deg);
+  }
 }
 
 .about__cards {
@@ -42,19 +43,20 @@
   padding: 2rem;
   text-align: center;
   transition: 0.3s;
-}
-.about__card:hover {
-  background-color: transparent;
-  border-color: var(--accent-color-dark);
-}
 
-.about__card h5 {
-  font-size: 0.95rem;
-}
+  :hover {
+    background-color: transparent;
+    border-color: var(--accent-color-dark);
+  }
 
-.about__card small {
-  font-size: 0.7rem;
-  color: var(--font-color-dark);
+  h5 {
+    font-size: 0.95rem;
+  }
+
+  small {
+    font-size: 0.7rem;
+    color: var(--font-color-dark);
+  }
 }
 
 .about__icon {
@@ -63,9 +65,11 @@
   margin-bottom: 1rem;
 }
 
-.about__content p {
-  margin: 2rem 0 2.6rem;
-  color: var(--font-color-light);
+.about__content {
+  p {
+    margin: 2rem 0 2.6rem;
+    color: var(--font-color-light);
+  }
 }
 
 /* 미디어 쿼리 (medium) */
@@ -80,8 +84,10 @@
     margin: 2rem auto 4rem;
   }
 
-  .about__content p {
-    margin: 1rem 0 1.5rem;
+  .about__content {
+    p {
+      margin: 1rem 0 1.5rem;
+    }
   }
 }
 
@@ -99,9 +105,9 @@
 
   .about__content {
     text-align: center;
-  }
 
-  .about__content p {
-    margin: 1.5rem 0;
+    p {
+      margin: 1.5rem 0;
+    }
   }
 }

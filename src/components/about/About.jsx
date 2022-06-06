@@ -1,5 +1,5 @@
 import React from "react";
-import "./about.css";
+import "./about.scss";
 import AVATAR from "../../assets/ngd.jpg";
 import { TbRun } from "react-icons/tb";
 
