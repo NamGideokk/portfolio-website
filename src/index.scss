@@ -1,3 +1,4 @@
+@use "./_variable.scss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
@@ -11,21 +12,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-// 변수
-$bg-color: #181834;
-$bg-color-light: #2d2d60;
-
-$accent-color: #4db5ff;
-$accent-color-dark: #347fb4;
-
-$font-color: #ffffff;
-$font-color-light: #e3e3e3;
-$font-color-dark: #bebebe;
-
-$container-width-lg: 75%;
-$container-width-md: 86%;
-$container-width-sm: 90%;
-
 html {
   scroll-behavior: smooth;
 }
@@ -35,7 +21,7 @@ html {
 }
 
 body {
-  background-color: $bg-color;
+  background-color: $test;
   color: $font-color;
   line-height: 1.7;
 }

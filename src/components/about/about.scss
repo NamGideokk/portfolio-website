@@ -1,3 +1,5 @@
+@use "../../index";
+
 .about__container {
   display: grid;
   grid-template-columns: 35% 50%;
@@ -8,12 +10,7 @@
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 2rem;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    var(--accent-color),
-    transparent
-  );
+  background: linear-gradient(45deg, transparent, $accent-color, transparent);
   display: grid;
   place-items: center;
 }
@@ -37,7 +34,7 @@
 }
 
 .about__card {
-  background-color: var(--bg-color-light);
+  background-color: $bg-color-light;
   border: 1px solid transparent;
   border-radius: 1rem;
   padding: 2rem;
@@ -46,7 +43,7 @@
 
   :hover {
     background-color: transparent;
-    border-color: var(--accent-color-dark);
+    border-color: $accent-color-dark;
   }
 
   h5 {
@@ -55,12 +52,12 @@
 
   small {
     font-size: 0.7rem;
-    color: var(--font-color-dark);
+    color: $font-color-dark;
   }
 }
 
 .about__icon {
-  color: var(--accent-color);
+  color: $accent-color;
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
@@ -68,7 +65,7 @@
 .about__content {
   p {
     margin: 2rem 0 2.6rem;
-    color: var(--font-color-light);
+    color: $font-color-light;
   }
 }
 
