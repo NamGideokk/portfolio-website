@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import AVATAR from "../../assets/avatar.png";
+import AVATAR from "../../assets/ngd.jpg";
 import { TbRun } from "react-icons/tb";
 
 const About = () => {
@@ -34,7 +34,15 @@ const About = () => {
             </article>
           </div>
 
-          <p>안녕하세요 신입 개발자를 꿈꾸는 남기덕입니다.</p>
+          <p>
+            안녕하세요 신입 개발자를 꿈꾸는 남기덕입니다. 안녕하세요 신입
+            개발자를 꿈꾸는 남기덕입니다.안녕하세요 신입 개발자를 꿈꾸는
+            남기덕입니다.안녕하세요 신입 개발자를 꿈꾸는 남기덕입니다.안녕하세요
+            신입 개발자를 꿈꾸는 남기덕입니다.안녕하세요 신입 개발자를 꿈꾸는
+            남기덕입니다.안녕하세요 신입 개발자를 꿈꾸는 남기덕입니다.안녕하세요
+            신입 개발자를 꿈꾸는 남기덕입니다.안녕하세요 신입 개발자를 꿈꾸는
+            남기덕입니다.
+          </p>
 
           <a href="#contact" className="btn btn-primary">
             Let's Talk
