@@ -27,13 +27,13 @@ header {
   position: absolute;
   left: 0;
   bottom: 3rem;
-}
 
-.header__socials::after {
-  content: "";
-  width: 1px;
-  height: 2rem;
-  background: var(--accent-color);
+  &::after {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--accent-color);
+  }
 }
 
 /* me */

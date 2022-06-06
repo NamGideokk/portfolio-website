@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./nav.css";
+import "./nav.scss";
 import { GrHome } from "react-icons/gr";
 import { FiUser } from "react-icons/fi";
 import { BiBook } from "react-icons/bi";

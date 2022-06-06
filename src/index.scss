@@ -11,21 +11,20 @@
   font-family: "Poppins", sans-serif;
 }
 
-:root {
-  --bg-color: #181834;
-  --bg-color-light: #2d2d60;
+// 변수
+$bg-color: #181834;
+$bg-color-light: #2d2d60;
 
-  --accent-color: #4db5ff;
-  --accent-color-dark: #347fb4;
+$accent-color: #4db5ff;
+$accent-color-dark: #347fb4;
 
-  --font-color: #ffffff;
-  --font-color-light: #e3e3e3;
-  --font-color-dark: #bebebe;
+$font-color: #ffffff;
+$font-color-light: #e3e3e3;
+$font-color-dark: #bebebe;
 
-  --container-width-lg: 75%;
-  --container-width-md: 86%;
-  --container-width-sm: 90%;
-}
+$container-width-lg: 75%;
+$container-width-md: 86%;
+$container-width-sm: 90%;
 
 html {
   scroll-behavior: smooth;
@@ -36,15 +35,14 @@ html {
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--font-color);
-  /* background-image: url("./assets/bg.png"); */
+  background-color: $bg-color;
+  color: $font-color;
   line-height: 1.7;
 }
 
 /* 공통 스타일 */
 .container {
-  width: var(--container-width-lg);
+  width: $container-width-lg;
   margin: 0 auto;
 }
 
@@ -68,47 +66,47 @@ section {
 section > h2,
 section > h5 {
   text-align: center;
-  color: var(--font-color-light);
+  color: $font-color-light;
 }
 
 section > h2 {
-  color: var(--accent-color);
+  color: $accent-color;
   margin-bottom: 3rem;
 }
 
 .text-light {
-  color: var(--font-color-light);
+  color: $font-color-light;
 }
 
 a {
-  color: var(--accent-color);
+  color: $accent-color;
   transition: 0.3s;
 }
 
 a:hover {
-  color: var(--accent-color-dark);
+  color: $accent-color-dark;
 }
 
 .btn {
   width: max-content;
   display: inline-block;
-  color: var(--accent-color);
+  color: $accent-color;
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
-  border: 1px solid var(--accent-color);
+  border: 1px solid $accent-color;
   transition: 0.3s;
 }
 
 .btn:hover {
-  background-color: var(--font-color);
-  color: var(--bg-color);
+  background-color: $font-color;
+  color: $bg-color;
   border-color: transparent;
 }
 
 .btn-primary {
-  background-color: var(--accent-color);
-  color: var(--bg-color);
+  background-color: $accent-color;
+  color: $bg-color;
 }
 
 img {
@@ -120,7 +118,7 @@ img {
 /* 미디어 쿼리 (medium) */
 @media screen and (max-width: 1024px) {
   .container {
-    width: var(--container-width-md);
+    width: $container-width-md;
   }
 
   section {
@@ -131,7 +129,7 @@ img {
 /* 미디어 쿼리 (small) */
 @media screen and (max-width: 600px) {
   .container {
-    width: var(--container-width-sm);
+    width: $container-width-sm;
   }
 
   section > h2 {
