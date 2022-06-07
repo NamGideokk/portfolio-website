@@ -1,1 +1,69 @@
 @import "../../_variable";
+
+.experience__frontend {
+  h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: $accent-color;
+  }
+}
+
+.experience__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+
+  article {
+    background-color: $bg-color-light;
+    padding: 1.2rem;
+    transition: 0.3s;
+    border-radius: 1rem;
+    border: $border-trans;
+    display: flex;
+    gap: 1rem;
+
+    &:hover {
+      background-color: transparent;
+      border: $border-bg;
+      transform: translateY(-0.5rem);
+
+      .html {
+        color: #f1491c;
+      }
+
+      .css {
+        color: #4199f0;
+      }
+
+      .javascript {
+        color: #fbdd2e;
+      }
+
+      .typescript {
+        color: #407ac4;
+      }
+
+      .react {
+        color: #87dcf9;
+      }
+
+      .firebase {
+        color: #f9c83b;
+      }
+
+      .graphql {
+        color: #f44381;
+      }
+
+      .photoshop {
+        color: #3fabfc;
+      }
+    }
+  }
+}
+
+.skill-icon {
+  color: $accent-color;
+  margin-top: 0.3rem;
+  transition: 0.3s;
+}

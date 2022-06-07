@@ -14,51 +14,51 @@ import {
 const skills = [
   {
     id: 1,
-    icon: <SiHtml5 />,
+    icon: <SiHtml5 className="skill-icon html" />,
     skill: "HTML",
-    level: "상",
+    level: "고급",
   },
   {
     id: 2,
-    icon: <SiCss3 />,
+    icon: <SiCss3 className="skill-icon css" />,
     skill: "CSS",
-    level: "상",
+    level: "고급",
   },
   {
     id: 3,
-    icon: <SiJavascript />,
+    icon: <SiJavascript className="skill-icon javascript" />,
     skill: "Java Script",
-    level: "상",
+    level: "중급",
   },
   {
     id: 4,
-    icon: <SiTypescript />,
+    icon: <SiTypescript className="skill-icon typescript" />,
     skill: "Type Script",
-    level: "하",
+    level: "초급",
   },
   {
     id: 5,
-    icon: <SiReact />,
+    icon: <SiReact className="skill-icon react" />,
     skill: "React",
-    level: "중",
+    level: "중급",
   },
   {
     id: 6,
-    icon: <SiFirebase />,
+    icon: <SiFirebase className="skill-icon firebase" />,
     skill: "Firebase",
-    level: "중",
+    level: "중급",
   },
   {
     id: 7,
-    icon: <SiGraphql />,
+    icon: <SiGraphql className="skill-icon graphql" />,
     skill: "GraphQL",
-    level: "하",
+    level: "초급",
   },
   {
     id: 8,
-    icon: <SiAdobephotoshop />,
+    icon: <SiAdobephotoshop className="skill-icon photoshop" />,
     skill: "Photoshop",
-    level: "중",
+    level: "중급",
   },
 ];
 
@@ -75,8 +75,10 @@ const Experience = () => {
             {skills.map((s) => (
               <article key={s.id} className="experience__details">
                 {s.icon}
-                <h4>{s.skill}</h4>
-                <small className="text-light">{s.level}</small>
+                <div>
+                  <h4>{s.skill}</h4>
+                  <small className="text-light">{s.level}</small>
+                </div>
               </article>
             ))}
           </div>
