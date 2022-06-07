@@ -1,4 +1,4 @@
-@use "./_variable.scss";
+@import "./_variable";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  background-color: $test;
+  background-color: $bg-color;
   color: $font-color;
   line-height: 1.7;
 }
