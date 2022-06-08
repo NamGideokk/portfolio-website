@@ -27,13 +27,13 @@ const skills = [
   {
     id: 3,
     icon: <SiJavascript className="skill-icon javascript" />,
-    skill: "Java Script",
+    skill: "JavaScript",
     level: "중급",
   },
   {
     id: 4,
     icon: <SiTypescript className="skill-icon typescript" />,
-    skill: "Type Script",
+    skill: "TypeScript",
     level: "초급",
   },
   {
@@ -78,6 +78,12 @@ const Experience = () => {
                 <div>
                   <h4>{s.skill}</h4>
                   <small className="text-light">{s.level}</small>
+                  <input
+                    className="level-range"
+                    type="range"
+                    max="10"
+                    value="9"
+                  />
                 </div>
               </article>
             ))}

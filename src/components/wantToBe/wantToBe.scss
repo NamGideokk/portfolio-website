@@ -1,0 +1,65 @@
+@import "../../_variable";
+
+.want__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+
+  .want {
+    background-color: $bg-color-light;
+    border-radius: 0 0 2rem 2rem;
+    border: $border-accent;
+    height: 110px;
+    transition: 0.3s;
+    overflow: hidden;
+
+    &:hover {
+      background-color: transparent;
+      border-color: $accent-color-dark;
+      cursor: default;
+      height: max-content;
+    }
+
+    .want__header {
+      background-color: $accent-color;
+      padding: 1rem;
+      border-radius: 0 0 2rem 2rem;
+      box-shadow: 0 2rem 1rem rgba($color: #000000, $alpha: 0.1);
+      text-align: center;
+      color: $bg-color;
+
+      .want-icon {
+        font-size: 1.5rem;
+        margin-top: 0.3rem;
+      }
+    }
+
+    .want__content {
+      padding: 2rem;
+      text-align: center;
+    }
+  }
+}
+
+/* 미디어 쿼리 (medium) */
+@media screen and (max-width: 1024px) {
+  .want__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* 미디어 쿼리 (small) */
+@media screen and (max-width: 600px) {
+  .want__container {
+    gap: 1.5rem;
+
+    .want {
+      height: fit-content;
+
+      .want__header {
+        padding: 0.7rem !important;
+      }
+    }
+  }
+}
