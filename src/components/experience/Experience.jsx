@@ -78,12 +78,6 @@ const Experience = () => {
                 <div>
                   <h4>{s.skill}</h4>
                   <small className="text-light">{s.level}</small>
-                  <input
-                    className="level-range"
-                    type="range"
-                    max="10"
-                    value="9"
-                  />
                 </div>
               </article>
             ))}

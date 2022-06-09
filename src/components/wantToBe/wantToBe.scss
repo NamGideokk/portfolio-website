@@ -37,6 +37,10 @@
     .want__content {
       padding: 2rem;
       text-align: center;
+
+      p > strong {
+        color: $accent-color;
+      }
     }
   }
 }
