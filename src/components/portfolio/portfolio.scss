@@ -1,0 +1,64 @@
+@import "../../variable";
+
+.portfolio__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.portfolio__item {
+  background-color: $bg-color-light;
+  padding: 1.3rem;
+  border-radius: 2rem;
+  border: $border-trans;
+  transition: 0.3s;
+  cursor: default;
+
+  &:hover {
+    border-color: $accent-color-dark;
+    background: transparent;
+  }
+
+  .portfolio__item-image {
+    border-radius: 1.5rem;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  // 타이틀
+  h3 {
+    margin: 1.5rem 0 0.2rem;
+  }
+
+  // 추가 정보
+  p {
+    color: $font-color-light;
+    margin-bottom: 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .portfolio__item-cta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* 미디어 쿼리 (medium) */
+@media screen and (max-width: 1024px) {
+  .portfolio__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+}
+
+/* 미디어 쿼리 (small) */
+@media screen and (max-width: 600px) {
+  .portfolio__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
