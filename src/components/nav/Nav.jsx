@@ -3,6 +3,7 @@ import "./nav.scss";
 import { GrHome } from "react-icons/gr";
 import { FiUser } from "react-icons/fi";
 import { BiBook } from "react-icons/bi";
+import { MdOutlineTagFaces } from "react-icons/md";
 import { BiMessageSquareDots } from "react-icons/bi";
 import { BiNote } from "react-icons/bi";
 
@@ -36,6 +37,15 @@ const Nav = () => {
         }}
       >
         <BiBook />
+      </a>
+      <a
+        href="#want-to-be"
+        className={activeNav === "#want-to-be" ? "active" : ""}
+        onClick={() => {
+          setActiveNav("#want-to-be");
+        }}
+      >
+        <MdOutlineTagFaces />
       </a>
       <a
         href="#portfolio"
