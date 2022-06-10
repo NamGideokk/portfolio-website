@@ -7,6 +7,7 @@
 }
 
 .portfolio__item {
+  // min-width: 276px;
   background-color: $bg-color-light;
   padding: 1.3rem;
   border-radius: 2rem;
@@ -24,6 +25,7 @@
 
     img {
       width: 100%;
+      height: 100%;
       object-fit: contain;
     }
   }
@@ -44,6 +46,17 @@
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
+
+    a {
+      text-align: center;
+      width: if(68, 89px, fit-content);
+    }
+  }
+
+  .empty-bar {
+    width: 232px;
+    height: 10px;
+    background-color: red;
   }
 }
 
