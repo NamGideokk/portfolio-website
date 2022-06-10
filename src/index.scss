@@ -1,5 +1,12 @@
 @import "./_variable";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@font-face {
+  font-family: "EliceDigitalBaeum_Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -74,7 +81,9 @@ a:hover {
 }
 
 .btn {
+  text-align: center;
   width: max-content;
+  min-width: 89px;
   display: inline-block;
   color: $accent-color;
   padding: 0.75rem 1.2rem;
@@ -91,6 +100,7 @@ a:hover {
 }
 
 .btn-primary {
+  text-align: center;
   background-color: $accent-color;
   color: $bg-color;
 }

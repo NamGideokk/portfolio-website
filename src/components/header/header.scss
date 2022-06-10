@@ -1,3 +1,5 @@
+@import "../../_variable";
+
 header {
   height: 100vh;
   padding-top: 7rem;
@@ -8,6 +10,10 @@ header {
   text-align: center;
   height: 100%;
   position: relative;
+
+  h1 {
+    font-family: $font-kor;
+  }
 }
 
 /* CTA */

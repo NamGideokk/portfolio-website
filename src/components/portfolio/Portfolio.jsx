@@ -17,7 +17,7 @@ const Portfolio = () => {
           title="픽미업"
           extraInfo="#온라인쇼핑몰 #팀프로젝트 #우수상🏆"
           githubLink="https://github.com/NamGideokk/semi_final_project"
-          demoLink="https://www.miricanvas.com/v/1vwvzx"
+          extraLink="https://www.miricanvas.com/v/1vwvzx"
           extraButtonTitle="PPT"
         />
         <PortfolioArticle
@@ -25,7 +25,7 @@ const Portfolio = () => {
           title="PET ＆ PET"
           extraInfo="#반려인커뮤니티 #팀프로젝트 #우수상🏆"
           githubLink="https://github.com/NamGideokk/final_project"
-          demoLink="https://www.miricanvas.com/v/1yf530"
+          extraLink="https://www.miricanvas.com/v/1yf530"
           extraButtonTitle="PPT"
         />
         <PortfolioArticle
@@ -33,7 +33,7 @@ const Portfolio = () => {
           title="픽미업"
           extraInfo="#트위터클론코딩 #토이프로젝트 #1인개발"
           githubLink="https://github.com/NamGideokk/twixxer"
-          demoLink="https://namgideokk.github.io/twixxer/"
+          extraLink="https://namgideokk.github.io/twixxer/"
         />
       </div>
     </section>

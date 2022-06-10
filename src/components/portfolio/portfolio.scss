@@ -1,5 +1,7 @@
 @import "../../variable";
 
+$width: fit-content;
+
 .portfolio__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -48,15 +50,11 @@
     margin-bottom: 1rem;
 
     a {
-      text-align: center;
-      width: if(68, 89px, fit-content);
+      width: $width;
+      @if ($width == 68) {
+        background-color: red;
+      }
     }
-  }
-
-  .empty-bar {
-    width: 232px;
-    height: 10px;
-    background-color: red;
   }
 }
 

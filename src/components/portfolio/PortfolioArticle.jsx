@@ -6,7 +6,7 @@ const PortfolioArticle = ({
   title,
   extraInfo,
   githubLink,
-  demoLink,
+  extraLink,
   extraButtonTitle = "Demo",
 }) => {
   return (
@@ -20,11 +20,10 @@ const PortfolioArticle = ({
         <a href={githubLink} className="btn" target="_blank">
           Github
         </a>
-        <a href={demoLink} className="btn btn-primary" target="_blank">
+        <a href={extraLink} className="btn btn-primary" target="_blank">
           {extraButtonTitle}
         </a>
       </div>
-      {/* <div className="empty-bar"></div> */}
     </article>
   );
 };
