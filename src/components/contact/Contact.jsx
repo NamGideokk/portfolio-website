@@ -43,7 +43,29 @@ const Contact = () => {
           </article>
         </div>
 
-        <form action=""></form>
+        <form action="">
+          <input
+            type="text"
+            name="name"
+            placeholder="이름을 입력해주세요."
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="이메일 주소를 입력해주세요."
+            required
+          />
+          <textarea
+            name="message"
+            rows="10"
+            placeholder="메세지를 입력해주세요."
+            required
+          ></textarea>
+          <button type="sumbit" className="btn btn-primary">
+            Send Message
+          </button>
+        </form>
       </div>
     </section>
   );
