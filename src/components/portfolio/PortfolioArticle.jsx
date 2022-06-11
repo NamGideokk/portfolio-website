@@ -19,8 +19,8 @@ const PortfolioArticle = ({
       <div className="portfolio__item-image">
         <img src={img} alt="portfolio image" />
       </div>
-      <h3>{title}</h3>
-      <p>{extraInfo}</p>
+      <h3 className="kor">{title}</h3>
+      <p className="kor">{extraInfo}</p>
       <div className="portfolio__item-cta">
         <a href={githubLink} className="btn" target="_blank">
           Github

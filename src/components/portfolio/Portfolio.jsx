@@ -9,7 +9,7 @@ const Portfolio = () => {
   return (
     <section id="portfolio">
       <h5>My Recent Work</h5>
-      <h2>포트폴리오</h2>
+      <h2 className="kor">포트폴리오</h2>
 
       <div className="container portfolio__container">
         <PortfolioArticle
