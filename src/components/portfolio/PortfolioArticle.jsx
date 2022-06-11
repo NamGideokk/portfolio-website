@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import "./portfolio.scss";
 
 const PortfolioArticle = ({
@@ -9,8 +10,12 @@ const PortfolioArticle = ({
   extraLink,
   extraButtonTitle = "Demo",
 }) => {
+  const [showModal, setShowModal] = useState(false);
+  function clickPortfolio() {
+    setShowModal(true);
+  }
   return (
-    <article className="portfolio__item">
+    <article className="portfolio__item" onClick={clickPortfolio}>
       <div className="portfolio__item-image">
         <img src={img} alt="portfolio image" />
       </div>
