@@ -45,12 +45,27 @@
     input,
     textarea {
       width: 100%;
-      padding: 1.5rem;
+      padding: 1rem;
       border-radius: 0.5rem;
       background-color: transparent;
       border: $border-bg;
       resize: none;
       color: $font-color;
     }
+  }
+}
+
+/* 미디어 쿼리 (medium) */
+@media screen and (max-width: 1024px) {
+  .contact__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* 미디어 쿼리 (small) */
+@media screen and (max-width: 600px) {
+  .contact__container {
+    width: $container-width-sm;
   }
 }
