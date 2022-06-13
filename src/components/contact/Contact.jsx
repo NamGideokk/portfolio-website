@@ -23,9 +23,13 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          // 이메일 보내기 성공후 text 초기화
+          e.target.reset();
+          alert("메일이 성공적으로 발송 되었습니다.");
         },
         (error) => {
           console.log(error.text);
+          alert("오류가 발생했습니다. 나중에 다시 시도해 주세요.");
         }
       );
   };
