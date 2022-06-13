@@ -1,13 +1,17 @@
 import React from "react";
 import "./footer.scss";
 import { BsArrowUpCircle } from "react-icons/bs";
+import HeaderSocials from "../header/HeaderSocials";
 
 const Footer = () => {
   function scrollUp() {
-    window.scroll({
-      top: 0,
-      behavior: "smooth",
-    });
+    function moveUp() {
+      window.scroll({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+    moveUp();
   }
   return (
     <footer>
@@ -44,6 +48,8 @@ const Footer = () => {
           <a href="#contact">Contact</a>
         </li>
       </ul>
+
+      <HeaderSocials className="footer-header__socials" />
 
       <div className="footer__copyright">
         <small>Nam Gideok. All rights reserved.</small>

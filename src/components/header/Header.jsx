@@ -13,7 +13,7 @@ const Header = () => {
         <h5 className="text-light">front-end developer</h5>
 
         <CTA />
-        <HeaderSocials />
+        <HeaderSocials className="header__socials" />
 
         <div className="me">
           <img src={ME} alt="me" />
