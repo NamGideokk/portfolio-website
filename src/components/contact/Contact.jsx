@@ -1,14 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact.scss";
 import { MdOutlineMail } from "react-icons/md";
 import { RiKakaoTalkFill } from "react-icons/ri";
 import { BsPhone } from "react-icons/bs";
+import Modal from "../modal/Modal";
 
 import emailjs from "emailjs-com";
 import { useRef } from "react";
 
 const Contact = () => {
   const form = useRef();
+
+  const [loading, setLoading] = useState(false);
+  const [showAlert, setShowAlert] = useState(false);
+  const [modalAnimation, setModalAnimation] = useState("");
+  const [text, setText] = useState("");
+
+  function onChange(e) {
+    const {
+      target: { name, value },
+    } = e;
+
+    if (name === "name") {
+      if (value.length > 0) {
+      }
+    }
+  }
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -22,14 +39,35 @@ const Contact = () => {
       )
       .then(
         (result) => {
+          setLoading(true);
+
           console.log(result.text);
           // 이메일 보내기 성공후 text 초기화
           e.target.reset();
-          alert("메일이 성공적으로 발송 되었습니다.");
+          setShowAlert(true);
+          setText("이메일이 성공적으로 발송되었습니다. 감사합니다!");
+          setModalAnimation("modal-open-animation");
+
+          setTimeout(() => {
+            setModalAnimation("");
+          }, 1000);
+
+          setTimeout(() => {
+            setModalAnimation("modal-close-animation");
+          }, 2000);
+
+          setTimeout(() => {
+            setShowAlert(false);
+            setModalAnimation("");
+          }, 3000);
+          setLoading(false);
         },
         (error) => {
+          setLoading(true);
+
           console.log(error.text);
           alert("오류가 발생했습니다. 나중에 다시 시도해 주세요.");
+          setLoading(false);
         }
       );
   };
@@ -37,7 +75,7 @@ const Contact = () => {
   return (
     <section id="contact">
       <h5>Contact Me</h5>
-      <h2 className="kor">연락처</h2>
+      <h2 className="kor">저에게 관심있는 분들의 연락을 기다립니다</h2>
 
       <div className="container contact__container">
         <div className="contact__options">
@@ -79,25 +117,29 @@ const Contact = () => {
             type="text"
             name="name"
             placeholder="이름을 입력해주세요."
+            onChange={onChange}
             required
           />
           <input
             type="email"
             name="email"
             placeholder="이메일 주소를 입력해주세요."
+            onChange={onChange}
             required
           />
           <textarea
             name="message"
             rows="10"
             placeholder="메세지를 입력해주세요."
+            onChange={onChange}
             required
           ></textarea>
-          <button type="sumbit" className="btn btn-primary">
-            Send Message
+          <button type="sumbit" className="btn btn-primary" disabled={loading}>
+            {loading ? "Sending Message..." : "Send Message"}
           </button>
         </form>
       </div>
+      {showAlert && <Modal animation={modalAnimation} alertText={text} />}
     </section>
   );
 };

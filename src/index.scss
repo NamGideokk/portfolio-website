@@ -53,6 +53,7 @@ h1 {
 
 section {
   margin-top: 8rem;
+  padding-top: 4rem;
   height: 100vh;
 }
 
@@ -131,8 +132,23 @@ img {
   .container {
     width: $container-width-sm;
   }
+}
 
-  section > h2 {
-    // margin-top: 2rem;
+// 애니메이션
+@keyframes modal {
+  from {
+    transform: translate(-50%, 500%);
+    opacity: 0;
   }
+  to {
+    transform: translateY(-50%, 0);
+    opacity: 1;
+  }
+}
+
+.modal-open-animation {
+  animation: modal 1s ease;
+}
+.modal-close-animation {
+  animation: modal 1s ease reverse;
 }
