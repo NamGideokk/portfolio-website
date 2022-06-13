@@ -1,0 +1,30 @@
+@import "../../../_variable";
+
+.up-button__icon {
+  width: 4rem;
+  height: 4rem;
+  padding: 0.7rem;
+  background-color: rgb(30, 30, 30);
+  color: $font-color-dark;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  transform: translateY(-2rem);
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    color: $accent-color;
+    animation: infinite alternate moving-button 0.5s;
+  }
+}
+
+// up-button 애니메이션
+@keyframes moving-button {
+  from {
+    transform: translateY(-2rem);
+  }
+  to {
+    transform: translateY(-2.3rem);
+  }
+}

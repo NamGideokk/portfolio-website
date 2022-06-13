@@ -1,26 +1,13 @@
 import React from "react";
 import "./footer.scss";
-import { BsArrowUpCircle } from "react-icons/bs";
 import HeaderSocials from "../header/HeaderSocials";
+import UpButton from "../common/upButton/UpButton";
 
 const Footer = () => {
-  function scrollUp() {
-    function moveUp() {
-      window.scroll({
-        top: 0,
-        behavior: "smooth",
-      });
-    }
-    moveUp();
-  }
   return (
     <footer>
-      <BsArrowUpCircle
-        className="up-button__icon"
-        onClick={scrollUp}
-        title="상단으로 이동"
-      />
-      <h2 className="footer__logo">NAMGIDEOK PORTFOLIO WEBSITE</h2>
+      <UpButton />
+      <h2 className="footer__logo">NAMGIDEOK's PORTFOLIO WEBSITE</h2>
 
       {/* 영구적인 주소라는 뜻 permanent link */}
       <ul className="permalinks">

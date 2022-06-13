@@ -21,25 +21,6 @@ footer {
   .footer__copyright {
     letter-spacing: 0.1rem;
   }
-
-  .up-button__icon {
-    width: 4rem;
-    height: 4rem;
-    padding: 0.7rem;
-    background-color: rgb(30, 30, 30);
-    color: $font-color-dark;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-    transform: translateY(-2rem);
-    cursor: pointer;
-    transition: 0.3s;
-
-    &:hover {
-      color: $accent-color;
-      animation: infinite alternate moving-button 0.5s;
-    }
-  }
 }
 
 .footer-header__socials {
@@ -58,21 +39,12 @@ footer {
 @media screen and (max-width: 600px) {
   footer {
     ul {
-      //   display: grid;
-      //   grid-template-columns: 1fr 1fr 1fr;
-      //   gap: 0.3rem;
       flex-direction: column;
       gap: 1rem;
     }
-  }
-}
 
-// up-button 애니메이션
-@keyframes moving-button {
-  from {
-    transform: translateY(-2rem);
-  }
-  to {
-    transform: translateY(-2.3rem);
+    h2 {
+      word-spacing: 20rem;
+    }
   }
 }
