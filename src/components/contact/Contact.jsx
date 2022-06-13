@@ -42,28 +42,30 @@ const Contact = () => {
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
-            <MdOutlineMail className="contact__option-icon" />
-            <h4>Email</h4>
-            <h5>namgd1222@gmail.com</h5>
             <a
               href="mailto:namgd1222@gmail.com"
               target="_blank"
               className="kor"
             >
-              메일 보내기
+              <MdOutlineMail
+                className="contact__option-icon"
+                title="메일 보내기"
+              />
             </a>
+            <h4>Email</h4>
+            <h5>namgd1222@gmail.com</h5>
           </article>
           <article className="contact__option">
             <RiKakaoTalkFill className="contact__option-icon" />
-            <h4>kakao Talk</h4>
+            <h4>Kakao Talk</h4>
             <h5>namkd1222</h5>
-            <a
+            {/* <a
               href="http://qr.kakao.com/talk/t5eFzsoHOMsjprdi2FBXzPfeV1s-"
               target="_blank"
               className="kor"
             >
               카카오톡 프로필
-            </a>
+            </a> */}
           </article>
           <article className="contact__option">
             <BsPhone className="contact__option-icon" />

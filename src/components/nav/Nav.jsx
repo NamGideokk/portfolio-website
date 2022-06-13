@@ -8,7 +8,7 @@ import { BiMessageSquareDots } from "react-icons/bi";
 import { BiNote } from "react-icons/bi";
 
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState("#");
+  const [activeNav, setActiveNav] = useState("");
   return (
     <nav>
       <a

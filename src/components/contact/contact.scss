@@ -30,7 +30,6 @@
       }
 
       a {
-        margin-top: 0.7rem;
         display: inline-block;
         font-size: 0.8rem;
       }
@@ -51,6 +50,12 @@
       border: $border-bg;
       resize: none;
       color: $font-color;
+      transition: 0.3s;
+
+      &:focus {
+        background-color: $font-color;
+        color: black;
+      }
     }
   }
 }

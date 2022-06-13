@@ -20,15 +20,10 @@ const Footer = () => {
         onClick={scrollUp}
         title="상단으로 이동"
       />
-      <a href="#" className="footer__logo">
-        NAMGD
-      </a>
+      <h2 className="footer__logo">NAMGIDEOK PORTFOLIO WEBSITE</h2>
 
       {/* 영구적인 주소라는 뜻 permanent link */}
       <ul className="permalinks">
-        <li>
-          <a href="#">Home</a>
-        </li>
         <li>
           <a href="#about">About</a>
         </li>
@@ -52,7 +47,7 @@ const Footer = () => {
       <HeaderSocials className="footer-header__socials" />
 
       <div className="footer__copyright">
-        <small>Nam Gideok. All rights reserved.</small>
+        <small>Made by Nam Gideok. All rights reserved.</small>
       </div>
     </footer>
   );
