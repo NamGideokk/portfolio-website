@@ -10,7 +10,7 @@ $width: fit-content;
 
 .portfolio__item {
   // min-width: 276px;
-  background-color: $bg-color-light;
+  background-color: $bg-color;
   padding: 1.3rem;
   border-radius: 2rem;
   border: $border-trans;
@@ -20,16 +20,6 @@ $width: fit-content;
   &:hover {
     border-color: $accent-color-dark;
     background: transparent;
-  }
-
-  .portfolio__item-image {
-    border-radius: 1.5rem;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
   }
 
   // 타이틀
@@ -55,6 +45,19 @@ $width: fit-content;
         background-color: red;
       }
     }
+  }
+
+  .mac {
+    position: relative;
+    z-index: 2;
+  }
+
+  .logo-image {
+    width: 70%;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+    bottom: 200px;
   }
 }
 

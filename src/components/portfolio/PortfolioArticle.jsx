@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./portfolio.scss";
+import IM from "../../assets/macbookSm.png";
 
 const PortfolioArticle = ({
   img,
@@ -16,9 +17,8 @@ const PortfolioArticle = ({
   }
   return (
     <article className="portfolio__item" onClick={clickPortfolio}>
-      <div className="portfolio__item-image">
-        <img src={img} alt="portfolio image" />
-      </div>
+      <img src={IM} alt="mac" className="mac" />
+      <img src={img} alt="portfolio image" className="logo-image" />
       <h3 className="kor">{title}</h3>
       <p className="kor">{extraInfo}</p>
       <div className="portfolio__item-cta">
