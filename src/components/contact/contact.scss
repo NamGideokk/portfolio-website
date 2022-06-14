@@ -13,7 +13,7 @@
 
     // article
     .contact__option {
-      background-color: $bg-color-light;
+      // background-color: $bg-color-light;
       padding: 1.2rem;
       border-radius: 1.2rem;
       text-align: center;
@@ -21,8 +21,8 @@
       transition: 0.3s;
 
       &:hover {
-        background-color: transparent;
-        border: $border-accent;
+        // background-color: $bg-color-light;
+        box-shadow: 0 0 1rem #0c0c1c;
       }
 
       .contact__option-icon {

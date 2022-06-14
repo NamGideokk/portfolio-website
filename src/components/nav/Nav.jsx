@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./nav.scss";
 import { GrHome } from "react-icons/gr";
 import { FiUser } from "react-icons/fi";
@@ -9,8 +9,22 @@ import { BiNote } from "react-icons/bi";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("");
+  const [className, setClassName] = useState("");
+
+  function changeNavBg() {
+    if (window.scrollY > 150 && window.scrollY <= 8700) {
+      setClassName("nav-bgcolor");
+    } else if (window.scrollY > 8500) {
+      setClassName("nav-dis-none");
+    } else {
+      setClassName("");
+    }
+  }
+
+  window.addEventListener("scroll", changeNavBg);
+
   return (
-    <nav>
+    <nav className={className}>
       <a
         href="#"
         className={activeNav === "#" ? "active" : ""}

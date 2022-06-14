@@ -66,7 +66,7 @@ const Experience = () => {
   return (
     <section id="experience">
       <h5>My Skills</h5>
-      <h2>보유 스킬</h2>
+      <h2 className="kor">보유 스킬</h2>
 
       <div className="container experience__container">
         <div className="experience__frontend">
@@ -77,7 +77,7 @@ const Experience = () => {
                 {s.icon}
                 <div>
                   <h4>{s.skill}</h4>
-                  <small className="text-light">{s.level}</small>
+                  <small className="text-light kor">{s.level}</small>
                 </div>
               </article>
             ))}

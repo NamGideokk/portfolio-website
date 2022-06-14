@@ -19,9 +19,6 @@ header {
 /* CTA */
 .cta {
   margin-top: 2.5rem;
-  display: flex;
-  gap: 1.2rem;
-  justify-content: center;
 }
 
 /* Header Socials */
@@ -39,8 +36,9 @@ header {
 .me {
   width: 22rem;
   height: 30rem;
-  position: absolute;
-  left: calc(50% - 11rem);
+  // position: absolute;
+  // left: calc(50% - 11rem);
+  margin: 0 auto;
   margin-top: 4rem;
   overflow: hidden;
 }
