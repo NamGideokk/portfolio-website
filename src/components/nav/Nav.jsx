@@ -24,7 +24,7 @@ const Nav = () => {
   window.addEventListener("scroll", changeNavBg);
 
   return (
-    <nav className={className}>
+    <nav className={`nav ${className}`}>
       <a
         href="#"
         className={activeNav === "#" ? "active" : ""}
