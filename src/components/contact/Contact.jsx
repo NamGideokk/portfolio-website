@@ -86,7 +86,7 @@ const Contact = () => {
               className="kor"
             >
               <MdOutlineMail
-                className="contact__option-icon"
+                className="contact__option-icon link-icon"
                 title="메일 보내기"
               />
             </a>

@@ -21,8 +21,18 @@
       transition: 0.3s;
 
       &:hover {
-        background-color: $bg-color-light;
-        box-shadow: 0 0 1rem $bg-color-light;
+        background-color: $accent-color;
+        color: $font-color-black;
+        box-shadow: 0 0 1rem $accent-color;
+
+        .link-icon {
+          color: $font-color-black;
+          transition: 0.3s;
+
+          &:hover {
+            color: $accent-color-dark;
+          }
+        }
       }
 
       .contact__option-icon {
@@ -49,7 +59,7 @@
       padding: 1rem;
       border-radius: 0.5rem;
       background-color: transparent;
-      border: $border-bg;
+      border: $border-accent;
       resize: none;
       color: $font-color;
       transition: 0.3s;
