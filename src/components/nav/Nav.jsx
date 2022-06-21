@@ -19,8 +19,6 @@ const Nav = () => {
     } else {
       setClassName("");
     }
-
-    console.log(window.scrollY);
   }
 
   window.addEventListener("scroll", changeNavBg);
