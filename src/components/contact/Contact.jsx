@@ -74,7 +74,7 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <h5>Contact Me</h5>
+      <h4>Contact Me</h4>
       <h2 className="kor">저에게 관심있는 분들의 연락을 기다립니다</h2>
 
       <div className="container contact__container">

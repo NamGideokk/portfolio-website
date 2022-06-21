@@ -7,7 +7,7 @@ import { BsFillBarChartLineFill } from "react-icons/bs";
 const WantToBe = () => {
   return (
     <section id="want-to-be">
-      <h5>I want to be a developer like this</h5>
+      <h4>I want to be a developer like this</h4>
       <h2 className="kor">이런 개발자가 되고 싶습니다</h2>
 
       <div className="container want__container">

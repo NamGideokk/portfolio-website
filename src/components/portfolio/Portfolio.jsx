@@ -8,7 +8,7 @@ import PFIMG03 from "../../assets/logo3.png";
 const Portfolio = () => {
   return (
     <section id="portfolio">
-      <h5>My Recent Work</h5>
+      <h4>My Recent Work</h4>
       <h2 className="kor">프로젝트</h2>
 
       <div className="container portfolio__container">

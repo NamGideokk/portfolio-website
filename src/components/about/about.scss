@@ -22,7 +22,7 @@
   transform: rotate(10deg);
   transition: 0.3s;
 
-  :hover {
+  &:hover {
     transform: rotate(0deg);
   }
 }
@@ -38,7 +38,7 @@
   background-color: $bg-color-light;
   border: 1px solid transparent;
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 1.2rem;
   text-align: center;
   transition: 0.3s;
 
@@ -48,19 +48,19 @@
   }
 
   h5 {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
   small {
-    font-size: 0.8rem;
-    color: $font-color-dark;
+    font-size: 0.9rem;
+    color: $font-color-light;
   }
 }
 
 .about__icon {
   color: $accent-color;
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  margin-bottom: 0.2rem;
 }
 
 .about__content {

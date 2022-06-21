@@ -65,7 +65,7 @@ const skills = [
 const Experience = () => {
   return (
     <section id="experience">
-      <h5>My Skills</h5>
+      <h4>My Skills</h4>
       <h2 className="kor">보유 스킬</h2>
 
       <div className="container experience__container">
