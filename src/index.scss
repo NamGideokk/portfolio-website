@@ -28,7 +28,12 @@ html {
 }
 
 body {
-  background-color: $bg-color;
+  background: linear-gradient(
+    180deg,
+    $bg-color-light,
+    $bg-color,
+    rgb(35, 35, 35)
+  );
   color: $font-color;
   line-height: 1.7;
 }
@@ -92,14 +97,21 @@ a:hover {
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
-  border: 1px solid $accent-color;
+  border: 1px solid $accent-color-dark;
   transition: 0.3s;
-}
+  box-shadow: 0 0.2rem 0 $accent-color-dark;
 
-.btn:hover {
-  background-color: $font-color;
-  color: $bg-color;
-  border-color: transparent;
+  &:hover {
+    box-shadow: 0 0.5rem 0 $accent-color-dark;
+    color: $font-color;
+    transform: translateY(-0.3rem);
+  }
+
+  &:active {
+    background-color: $accent-color;
+    box-shadow: 0 0.1rem 0 $accent-color-dark;
+    transform: translateY(0.1rem);
+  }
 }
 
 .btn-primary {

@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.scss";
-import AVATAR from "../../assets/ngd.jpg";
+import AVATAR from "../../assets/mimoticon.png";
 import { TbRun } from "react-icons/tb";
 import { FaGraduationCap } from "react-icons/fa";
 import { IoMdTrophy } from "react-icons/io";
@@ -28,7 +28,9 @@ const About = () => {
               <FaGraduationCap className="about__icon" />
               <h5>Education</h5>
               <small>
-                벤처스타트업 아카데미 - 지능형 웹서비스 풀스택 개발 수료
+                벤처스타트업 아카데미
+                <br />
+                지능형 웹서비스 풀스택 개발 수료
               </small>
             </article>
             <article className="about__card">

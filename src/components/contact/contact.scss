@@ -21,8 +21,8 @@
       transition: 0.3s;
 
       &:hover {
-        // background-color: $bg-color-light;
-        box-shadow: 0 0 1rem #0c0c1c;
+        background-color: $bg-color-light;
+        box-shadow: 0 0 1rem $bg-color-light;
       }
 
       .contact__option-icon {
