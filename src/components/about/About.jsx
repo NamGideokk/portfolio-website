@@ -46,11 +46,11 @@ const About = () => {
           <p className="kor">
             서비스직에서 약 8년간 일하고, 진로를 전향한 신입 프론트엔드 개발자
             남기덕입니다. React 사용경험이 많으며, 웹 퍼블리싱과 반응형 개발에
-            관심이 많습니다. 풀스택 개발 교육을 수료했으며, 팀프로젝트에서
+            관심이 많습니다. 풀스택 개발 교육을 수료했고, 팀 프로젝트에서
             우수상을 2회 수상했습니다.
           </p>
 
-          <a href="#contact" className="btn btn-primary">
+          <a href="#contact" className="btn btn-primary to-contact__btn">
             Let's Talk
           </a>
         </div>

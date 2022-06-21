@@ -12,13 +12,15 @@ const Nav = () => {
   const [className, setClassName] = useState("");
 
   function changeNavBg() {
-    if (window.scrollY > 150 && window.scrollY <= 8700) {
+    if (window.scrollY > 150 && window.scrollY <= 7100) {
       setClassName("nav-bgcolor");
-    } else if (window.scrollY > 8500) {
+    } else if (window.scrollY > 7100) {
       setClassName("nav-dis-none");
     } else {
       setClassName("");
     }
+
+    console.log(window.scrollY);
   }
 
   window.addEventListener("scroll", changeNavBg);

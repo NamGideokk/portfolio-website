@@ -33,6 +33,7 @@
   gap: 1.5rem;
 }
 
+// article
 .about__card {
   background-color: $bg-color-light;
   border: 1px solid transparent;
@@ -41,7 +42,7 @@
   text-align: center;
   transition: 0.3s;
 
-  :hover {
+  &:hover {
     background-color: transparent;
     border-color: $accent-color-dark;
   }
@@ -51,7 +52,7 @@
   }
 
   small {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: $font-color-dark;
   }
 }
@@ -69,7 +70,16 @@
   }
 }
 
+.to-contact__btn {
+  float: right;
+}
+
 /* 미디어 쿼리 (medium) */
+@media screen and (max-width: 1500px) {
+  .about__cards {
+    grid-template-columns: 1fr;
+  }
+}
 @media screen and (max-width: 1024px) {
   .about__container {
     grid-template-columns: 1fr;
@@ -85,6 +95,10 @@
     p {
       margin: 1rem 0 1.5rem;
     }
+  }
+
+  .about__cards {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
