@@ -25,7 +25,7 @@
     transition: 0.3s;
 
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
   }
 }
@@ -46,8 +46,9 @@
   transition: 0.3s;
 
   &:hover {
-    background-color: transparent;
-    border-color: $accent-color-dark;
+    background-color: $bg-color-bright;
+    box-shadow: 0 0.5rem 0 $bg-color;
+    transform: translateY(-0.5rem);
   }
 
   h5 {

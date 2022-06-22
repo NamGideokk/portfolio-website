@@ -20,8 +20,6 @@ const Header = () => {
     };
   }, []);
 
-  console.log(vw);
-
   return (
     <header>
       <div className="container header__container">

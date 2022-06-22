@@ -23,9 +23,9 @@
     gap: 1rem;
 
     &:hover {
-      background-color: transparent;
-      border: $border-bg;
-      transform: scale(1.03);
+      background-color: $bg-color-bright;
+      box-shadow: 0 0.5rem 0 $bg-color;
+      transform: translateY(-0.5rem);
 
       .html {
         color: #f1491c;

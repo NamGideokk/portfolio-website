@@ -28,6 +28,7 @@ const Contact = () => {
   }
 
   const sendEmail = (e) => {
+    setLoading(true);
     e.preventDefault();
 
     emailjs
@@ -39,8 +40,6 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          setLoading(true);
-
           console.log(result.text);
           // 이메일 보내기 성공후 text 초기화
           e.target.reset();
@@ -60,16 +59,13 @@ const Contact = () => {
             setShowAlert(false);
             setModalAnimation("");
           }, 3000);
-          setLoading(false);
         },
         (error) => {
-          setLoading(true);
-
           console.log(error.text);
           alert("오류가 발생했습니다. 나중에 다시 시도해 주세요.");
-          setLoading(false);
         }
       );
+    setLoading(false);
   };
 
   return (

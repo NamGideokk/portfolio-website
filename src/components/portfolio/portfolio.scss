@@ -4,10 +4,11 @@ $width: fit-content;
 
 .portfolio__container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
 }
 
+// article
 .portfolio__item {
   // min-width: 276px;
   background-color: $bg-color;
@@ -18,8 +19,67 @@ $width: fit-content;
   cursor: default;
 
   &:hover {
-    border-color: $accent-color-dark;
-    background: transparent;
+    background: $bg-color-light;
+    box-shadow: 0 0.5rem 0 $bg-color;
+    transform: translateY(-0.5rem);
+  }
+
+  // 사파리 브라우저st 아이콘
+  .circle {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.5rem;
+    position: relative;
+    top: 1.3rem;
+    left: 2rem;
+
+    &:nth-of-type(1) {
+      background-color: #ee5e5a;
+    }
+    &:nth-of-type(2) {
+      background-color: #ecae35;
+    }
+    &:nth-of-type(3) {
+      background-color: #4cc43c;
+    }
+  }
+
+  // 이미지 컨테이너
+  .img__container {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 80%;
+    min-height: 200px;
+    max-height: 400px;
+    overflow: hidden;
+    border: 2px solid #cdcfd0;
+    border-top: 1.1rem solid #cdcfd0;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+
+    &:hover .project-image {
+      transform: translateY(-100%);
+    }
+
+    &:hover .project-info {
+    }
+  }
+
+  // hover시 출력 정보
+  .project-info {
+    background: rgba($color: $bg-color, $alpha: 0.2);
+    backdrop-filter: blur(5px);
+    width: 496px;
+    height: 5rem;
+    position: absolute;
+    transition: 2s;
+    transform: translateY(400px);
+  }
+
+  .project-image {
+    transition: transform 10s ease;
   }
 
   // 타이틀
@@ -45,19 +105,6 @@ $width: fit-content;
         background-color: red;
       }
     }
-  }
-
-  .mac {
-    position: relative;
-    z-index: 2;
-  }
-
-  .logo-image {
-    width: 70%;
-    margin: 0 auto;
-    z-index: 1;
-    position: relative;
-    bottom: 200px;
   }
 }
 

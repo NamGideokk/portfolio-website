@@ -1,9 +1,9 @@
 import React from "react";
 import PortfolioArticle from "./PortfolioArticle";
 import "./portfolio.scss";
-import PFIMG01 from "../../assets/logo1.png";
-import PFIMG02 from "../../assets/logo2.png";
-import PFIMG03 from "../../assets/logo3.png";
+import PFIMG01 from "../../assets/semiFinal.jpg";
+import PFIMG02 from "../../assets/final.jpg";
+import PFIMG03 from "../../assets/toy01.jpg";
 
 const Portfolio = () => {
   return (
