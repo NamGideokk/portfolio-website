@@ -9,8 +9,15 @@ import {
   SiFirebase,
   SiGraphql,
   SiAdobephotoshop,
+  SiSass,
 } from "react-icons/si";
 import SlideTitle from "../common/slideTitle/SlideTitle";
+
+// {
+//   id: 4,
+//   icon: <SiTypescript className="skill-icon typescript" />,
+//   skill: "TypeScript",
+// },
 
 const skills = [
   {
@@ -30,8 +37,8 @@ const skills = [
   },
   {
     id: 4,
-    icon: <SiTypescript className="skill-icon typescript" />,
-    skill: "TypeScript",
+    icon: <SiSass className="skill-icon scss" />,
+    skill: "Scss",
   },
   {
     id: 5,
@@ -42,16 +49,6 @@ const skills = [
     id: 6,
     icon: <SiFirebase className="skill-icon firebase" />,
     skill: "Firebase",
-  },
-  {
-    id: 7,
-    icon: <SiGraphql className="skill-icon graphql" />,
-    skill: "GraphQL",
-  },
-  {
-    id: 8,
-    icon: <SiAdobephotoshop className="skill-icon photoshop" />,
-    skill: "Photoshop",
   },
 ];
 
