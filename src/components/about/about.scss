@@ -68,8 +68,10 @@
 }
 
 .about__content {
-  p {
+  > p {
     margin: 2rem 0 2.6rem;
+    letter-spacing: 0.02rem;
+    word-spacing: 0.08rem;
     color: $font-color-light;
   }
 }

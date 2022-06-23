@@ -12,9 +12,9 @@ const Nav = () => {
   const [className, setClassName] = useState("");
 
   function changeNavBg() {
-    if (window.scrollY > 150 && window.scrollY <= 7100) {
+    if (window.scrollY > 150 && window.scrollY <= 7000) {
       setClassName("nav-bgcolor");
-    } else if (window.scrollY > 7100) {
+    } else if (window.scrollY > 7000) {
       setClassName("nav-dis-none");
     } else {
       setClassName("");
@@ -27,9 +27,9 @@ const Nav = () => {
     <nav className={`nav ${className}`}>
       <a
         href="#"
-        className={activeNav === "#" ? "active" : ""}
+        className={activeNav === "home" ? "active" : ""}
         onClick={() => {
-          setActiveNav("#");
+          setActiveNav("home");
         }}
         title="home"
       >

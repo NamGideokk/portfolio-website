@@ -53,10 +53,12 @@
       z-index: 1;
       transition: 1s ease-in-out;
 
-      p > strong {
-        color: $font-color;
-        transition: 0.5s;
-        transition-delay: 1s;
+      p {
+        > strong {
+          color: $font-color;
+          transition: 0.5s;
+          transition-delay: 1s;
+        }
       }
     }
   }
