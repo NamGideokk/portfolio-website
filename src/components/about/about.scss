@@ -2,27 +2,19 @@
 
 .about__container {
   display: grid;
-  grid-template-columns: 45% 55%;
+  grid-template-columns: 40% 55%;
   gap: 5%;
 }
 
-// .about__me {
-//   width: 100%;
-//   aspect-ratio: 1/1;
-//   border-radius: 2rem;
-//   background: linear-gradient(45deg, transparent, $accent-color, transparent);
-//   display: grid;
-//   place-items: center;
-// }
-
 .about__me-image {
   height: 100%;
-  width: 60%;
+  width: 80%;
   border-radius: 2rem;
   transition: 0.3s;
 
   img {
     transition: 0.3s;
+    object-fit: contain;
 
     &:hover {
       transform: scale(1.05);
@@ -83,7 +75,7 @@
 /* 미디어 쿼리 (medium) */
 @media screen and (max-width: 1500px) {
   .about__cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .about__me-image {
     width: 100%;

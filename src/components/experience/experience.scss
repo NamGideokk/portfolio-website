@@ -6,6 +6,12 @@
     margin-bottom: 2rem;
     color: $accent-color;
   }
+
+  .experience__details {
+    > h4 {
+      margin-top: 0.5rem;
+    }
+  }
 }
 
 .experience__content {
@@ -63,9 +69,9 @@
 }
 
 .skill-icon {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   color: $accent-color;
-  margin-top: 0.3rem;
+  // margin-top: 0.3rem;
   transition: 0.3s;
   width: 3rem;
 }
@@ -77,8 +83,10 @@
     gap: 2rem;
   }
 
-  .experience__details:hover {
-    transform: translateY(-0.3rem) !important;
+  .experience__details {
+    &:hover {
+      transform: translateY(-0.3rem) !important;
+    }
   }
 }
 

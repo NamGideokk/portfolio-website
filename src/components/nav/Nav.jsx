@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./nav.scss";
-import { GrHome } from "react-icons/gr";
+import { VscHome } from "react-icons/vsc";
 import { FiUser } from "react-icons/fi";
 import { BiBook } from "react-icons/bi";
 import { MdOutlineTagFaces } from "react-icons/md";
@@ -33,7 +33,7 @@ const Nav = () => {
         }}
         title="home"
       >
-        <GrHome />
+        <VscHome />
       </a>
       <a
         href="#about"
