@@ -109,27 +109,25 @@ const Contact = () => {
         </div>
 
         <form ref={form} onSubmit={sendEmail}>
-          <input
-            type="text"
-            name="name"
-            placeholder="이름을 입력해주세요."
-            onChange={onChange}
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="이메일 주소를 입력해주세요."
-            onChange={onChange}
-            required
-          />
-          <textarea
-            name="message"
-            rows="10"
-            placeholder="메세지를 입력해주세요."
-            onChange={onChange}
-            required
-          ></textarea>
+          <div className="input-box">
+            <input type="text" name="name" onChange={onChange} required />
+            <span className="name">name</span>
+          </div>
+
+          <div className="input-box">
+            <input type="email" name="email" onChange={onChange} required />
+            <span className="email">email</span>
+          </div>
+
+          <div className="input-box">
+            <textarea
+              name="message"
+              rows="10"
+              onChange={onChange}
+              required
+            ></textarea>
+            <span className="message">message</span>
+          </div>
           <button type="sumbit" className="btn btn-primary" disabled={loading}>
             {loading ? "Sending Message..." : "Send Message"}
           </button>

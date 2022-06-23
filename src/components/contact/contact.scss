@@ -50,23 +50,74 @@
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    width: 90%;
+    max-width: 720px;
+    margin: 0 auto;
 
-    input,
-    textarea {
-      margin: 0 auto;
-      max-width: 45rem;
+    .input-box {
       width: 100%;
-      padding: 1rem;
-      border-radius: 0.5rem;
-      background-color: transparent;
-      border: $border-accent;
-      resize: none;
-      color: $font-color;
-      transition: 0.3s;
 
-      &:focus {
-        background-color: $font-color;
-        color: black;
+      input,
+      textarea {
+        width: 100%;
+        transition: 0.3s;
+        margin: 0 auto;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background-color: transparent;
+        border: $border-accent;
+        resize: none;
+        color: $font-color;
+
+        &:valid ~ span,
+        &:focus ~ span {
+          color: $accent-color;
+          background-color: #202028;
+          left: 1rem;
+          border-left: 1px solid $accent-color;
+          border-right: 1px solid $accent-color;
+          font-size: 0.8rem;
+        }
+
+        &:valid ~ span {
+          background-color: $accent-color;
+          color: $font-color-black;
+          border-radius: 0.3rem;
+        }
+      }
+
+      // input, textarea의 height가 다르기 때문에 분리
+      input {
+        &:valid ~ span,
+        &:focus ~ span {
+          bottom: 4.15rem;
+        }
+      }
+
+      textarea {
+        &:valid ~ span,
+        &:focus ~ span {
+          bottom: 15.9rem;
+        }
+      }
+
+      span {
+        position: relative;
+        padding: 0 0.5rem;
+        pointer-events: none;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        transition: 0.3s;
+        left: 0.8rem;
+        color: $font-color;
+      }
+
+      .name,
+      .email {
+        bottom: 2.58rem;
+      }
+      .message {
+        bottom: 14.4rem;
       }
     }
 
@@ -81,6 +132,14 @@
   .contact__container {
     grid-template-columns: 1fr;
     gap: 2rem;
+
+    .contact__options {
+      gap: 0.6rem;
+
+      .contact__option {
+        padding: 0.6rem !important;
+      }
+    }
   }
 }
 
@@ -92,6 +151,18 @@
     .contact__options {
       flex-direction: column;
       margin: 0 auto;
+    }
+
+    form {
+      width: 100%;
+
+      .input-box {
+        width: 100%;
+        input,
+        textarea {
+          width: 100%;
+        }
+      }
     }
   }
 }
