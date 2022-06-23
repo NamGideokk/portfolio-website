@@ -66,26 +66,28 @@ const skills = [
 const Experience = () => {
   return (
     <section id="experience">
-      <h4>Experience</h4>
-      <SlideTitle engTitle="My Skills" korTitle="이런 스킬을 사용합니다" />
+      <main className="main__container">
+        <h4>Experience</h4>
+        <SlideTitle engTitle="My Skills" korTitle="이런 스킬을 사용합니다" />
 
-      <div className="container experience__container">
-        <div className="experience__frontend">
-          <h3>Frontend Development</h3>
-          <div className="experience__content">
-            {skills.map((s) => (
-              <article key={s.id} className="experience__details">
-                {s.icon}
-                <div>
-                  <h4>{s.skill}</h4>
-                  <small className="text-light kor">{s.level}</small>
-                </div>
-              </article>
-            ))}
+        <div className="container experience__container">
+          <div className="experience__frontend">
+            <h3>Frontend Development</h3>
+            <div className="experience__content">
+              {skills.map((s) => (
+                <article key={s.id} className="experience__details">
+                  {s.icon}
+                  <div>
+                    <h4>{s.skill}</h4>
+                    <small className="text-light kor">{s.level}</small>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
+          <div className="experience__backend"></div>
         </div>
-        <div className="experience__backend"></div>
-      </div>
+      </main>
     </section>
   );
 };

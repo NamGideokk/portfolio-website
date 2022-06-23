@@ -73,9 +73,9 @@
         &:focus ~ span {
           color: $accent-color;
           background-color: #202028;
-          left: 1rem;
-          border-left: 1px solid $accent-color;
-          border-right: 1px solid $accent-color;
+          left: 1.1rem;
+          border-left: $border-accent;
+          border-right: $border-accent;
           font-size: 0.8rem;
         }
 

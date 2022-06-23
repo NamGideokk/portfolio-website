@@ -2,14 +2,16 @@
 
 header {
   height: 100vh;
-  padding-top: 5rem;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 .header__container {
   text-align: center;
-  height: 100%;
+  height: fit-content;
   position: relative;
+  padding-bottom: 10rem;
 
   h1 {
     font-family: $font-kor;

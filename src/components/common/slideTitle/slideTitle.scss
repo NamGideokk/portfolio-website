@@ -1,7 +1,7 @@
 @import "../../../_variable.scss";
 
 .title__wrapper {
-  height: 41px;
+  height: 3rem;
   margin: 0.5rem 0 2rem;
   overflow: hidden;
 
@@ -10,12 +10,19 @@
     text-align: center;
     animation: slide-up 8s infinite forwards normal ease-in-out;
 
-    // h2 {
-    //   &:nth-child(1) {
-    //   }
-    //   &:nth-child(2) {
-    //   }
-    // }
+    h2 {
+      font-size: 1.8rem;
+      color: $accent-color;
+      // &:nth-child(1) {
+      //   background-color: red;
+      // }
+      // &:nth-child(2) {
+      //   background-color: greenyellow;
+      // }
+      // &:nth-child(3) {
+      //   background-color: blue;
+      // }
+    }
   }
 }
 
@@ -24,9 +31,9 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-41px);
+    transform: translateY(-3rem);
   }
   100% {
-    transform: translateY(-82px);
+    transform: translateY(-6.1rem);
   }
 }

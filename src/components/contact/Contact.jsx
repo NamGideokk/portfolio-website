@@ -71,73 +71,79 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <h4>Contact</h4>
-      <SlideTitle
-        engTitle="Contact Me"
-        korTitle="관심있는 분들의 연락을 기다립니다"
-      />
+      <main className="main__container">
+        <h4>Contact</h4>
+        <SlideTitle
+          engTitle="Contact Me"
+          korTitle="관심있는 분들의 연락을 기다립니다"
+        />
 
-      <div className="container contact__container">
-        <div className="contact__options">
-          <article className="contact__option">
-            <a
-              href="mailto:namgd1222@gmail.com"
-              target="_blank"
-              className="kor"
-            >
-              <MdOutlineMail
-                className="contact__option-icon link-icon"
-                title="메일 보내기"
-              />
-            </a>
-            <h4>Email</h4>
-            <h5>namgd1222@gmail.com</h5>
-          </article>
-          <article className="contact__option">
-            <RiKakaoTalkFill className="contact__option-icon" />
-            <h4>Kakao Talk</h4>
-            <h5>namkd1222</h5>
-            {/* <a
+        <div className="container contact__container">
+          <div className="contact__options">
+            <article className="contact__option">
+              <a
+                href="mailto:namgd1222@gmail.com"
+                target="_blank"
+                className="kor"
+              >
+                <MdOutlineMail
+                  className="contact__option-icon link-icon"
+                  title="메일 보내기"
+                />
+              </a>
+              <h4>Email</h4>
+              <h5>namgd1222@gmail.com</h5>
+            </article>
+            <article className="contact__option">
+              <RiKakaoTalkFill className="contact__option-icon" />
+              <h4>Kakao Talk</h4>
+              <h5>namkd1222</h5>
+              {/* <a
               href="http://qr.kakao.com/talk/t5eFzsoHOMsjprdi2FBXzPfeV1s-"
               target="_blank"
               className="kor"
             >
               카카오톡 프로필
             </a> */}
-          </article>
-          <article className="contact__option">
-            <BsPhone className="contact__option-icon" />
-            <h4>Phone</h4>
-            <h5>010-4615-3168</h5>
-          </article>
+            </article>
+            <article className="contact__option">
+              <BsPhone className="contact__option-icon" />
+              <h4>Phone</h4>
+              <h5>010-4615-3168</h5>
+            </article>
+          </div>
+
+          <form ref={form} onSubmit={sendEmail}>
+            <div className="input-box">
+              <input type="text" name="name" onChange={onChange} required />
+              <span className="name">name</span>
+            </div>
+
+            <div className="input-box">
+              <input type="email" name="email" onChange={onChange} required />
+              <span className="email">email</span>
+            </div>
+
+            <div className="input-box">
+              <textarea
+                name="message"
+                rows="10"
+                onChange={onChange}
+                required
+              ></textarea>
+              <span className="message">message</span>
+            </div>
+            <button
+              type="sumbit"
+              className="btn btn-primary"
+              disabled={loading}
+            >
+              {loading ? "Sending Message..." : "Send Message"}
+            </button>
+          </form>
         </div>
-
-        <form ref={form} onSubmit={sendEmail}>
-          <div className="input-box">
-            <input type="text" name="name" onChange={onChange} required />
-            <span className="name">name</span>
-          </div>
-
-          <div className="input-box">
-            <input type="email" name="email" onChange={onChange} required />
-            <span className="email">email</span>
-          </div>
-
-          <div className="input-box">
-            <textarea
-              name="message"
-              rows="10"
-              onChange={onChange}
-              required
-            ></textarea>
-            <span className="message">message</span>
-          </div>
-          <button type="sumbit" className="btn btn-primary" disabled={loading}>
-            {loading ? "Sending Message..." : "Send Message"}
-          </button>
-        </form>
-      </div>
-      {showAlert && <Modal animation={modalAnimation} alertText={text} />}
+        {showAlert && <Modal animation={modalAnimation} alertText={text} />}
+      </main>
     </section>
   );
 };
