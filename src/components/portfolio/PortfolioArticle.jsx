@@ -20,7 +20,6 @@ const PortfolioArticle = ({
       <div className="circle"></div>
       <div className="circle"></div>
       <div className="img__container">
-        <div className="project-info">detail infomation</div>
         <img src={img} alt="portfolio image" className="project-image" />
       </div>
       <h3 className="kor">{title}</h3>

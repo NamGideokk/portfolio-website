@@ -35,14 +35,14 @@ const About = () => {
             </article>
             <article className="about__card">
               <TbRun className="about__icon" />
-              <h5>Experience</h5>
-              <small>Rookie</small>
+              <h5>Career</h5>
+              <small>신입</small>
             </article>
           </div>
 
           <p className="kor">
             서비스직에서 약 8년간 일하고, 진로를 전향한 신입 프론트엔드 개발자
-            남기덕입니다. React 사용경험이 많으며, 웹 퍼블리싱과 반응형 개발에
+            남기덕입니다. React 사용경험이 많으며, 웹 퍼블리싱과 반응형 개발에도
             관심이 많습니다. 풀스택 개발 교육을 수료했고, 팀 프로젝트에서
             프론트엔드를 맡아 우수상을 2회 수상했습니다. 열심히 하겠습니다!
           </p>
