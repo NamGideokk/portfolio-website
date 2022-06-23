@@ -3,12 +3,13 @@ import "./wantToBe.scss";
 import { BsFillPersonCheckFill } from "react-icons//bs";
 import { HiUsers } from "react-icons/hi";
 import { BsFillBarChartLineFill } from "react-icons/bs";
+import SlideTitle from "../common/slideTitle/SlideTitle";
 
 const WantToBe = () => {
   return (
     <section id="want-to-be">
-      <h4>I want to be a developer like this</h4>
-      <h2 className="kor">이런 개발자가 되고 싶습니다</h2>
+      <h4>Goal</h4>
+      <SlideTitle engTitle="My Goals" korTitle="이런 개발자가 되고 싶습니다" />
 
       <div className="container want__container">
         <article className="want">

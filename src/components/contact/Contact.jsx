@@ -7,6 +7,7 @@ import Modal from "../modal/Modal";
 
 import emailjs from "emailjs-com";
 import { useRef } from "react";
+import SlideTitle from "../common/slideTitle/SlideTitle";
 
 const Contact = () => {
   const form = useRef();
@@ -70,8 +71,11 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <h4>Contact Me</h4>
-      <h2 className="kor">저에게 관심있는 분들의 연락을 기다립니다</h2>
+      <h4>Contact</h4>
+      <SlideTitle
+        engTitle="Contact Me"
+        korTitle="관심있는 분들의 연락을 기다립니다"
+      />
 
       <div className="container contact__container">
         <div className="contact__options">

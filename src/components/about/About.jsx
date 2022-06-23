@@ -4,12 +4,13 @@ import AVATAR from "../../assets/mimoticon.png";
 import { TbRun } from "react-icons/tb";
 import { FaGraduationCap } from "react-icons/fa";
 import { IoMdTrophy } from "react-icons/io";
+import SlideTitle from "../common/slideTitle/SlideTitle";
 
 const About = () => {
   return (
     <section id="about">
       <h4>Get To Know</h4>
-      <h2>About Me</h2>
+      <SlideTitle engTitle="About Me" korTitle="저를 소개합니다" />
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
@@ -20,13 +21,9 @@ const About = () => {
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
-              <FaGraduationCap className="about__icon" />
-              <h5>Education</h5>
-              <small>
-                벤처스타트업 아카데미
-                <br />
-                지능형 웹서비스 풀스택 개발 교육 수료
-              </small>
+              <TbRun className="about__icon" />
+              <h5>Career</h5>
+              <small>신입</small>
             </article>
             <article className="about__card">
               <IoMdTrophy className="about__icon" />
@@ -34,9 +31,13 @@ const About = () => {
               <small>프로젝트 우수상 2회 수상</small>
             </article>
             <article className="about__card">
-              <TbRun className="about__icon" />
-              <h5>Career</h5>
-              <small>신입</small>
+              <FaGraduationCap className="about__icon" />
+              <h5>Education</h5>
+              <small>
+                벤처스타트업 아카데미
+                <br />
+                지능형 웹서비스 풀스택 개발 교육 수료
+              </small>
             </article>
           </div>
 

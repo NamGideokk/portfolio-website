@@ -10,6 +10,7 @@ import {
   SiGraphql,
   SiAdobephotoshop,
 } from "react-icons/si";
+import SlideTitle from "../common/slideTitle/SlideTitle";
 
 const skills = [
   {
@@ -65,8 +66,8 @@ const skills = [
 const Experience = () => {
   return (
     <section id="experience">
-      <h4>My Skills</h4>
-      <h2 className="kor">보유 스킬</h2>
+      <h4>Experience</h4>
+      <SlideTitle engTitle="My Skills" korTitle="이런 스킬을 사용합니다" />
 
       <div className="container experience__container">
         <div className="experience__frontend">

@@ -1,0 +1,32 @@
+@import "../../../_variable.scss";
+
+.title__wrapper {
+  height: 41px;
+  margin: 0.5rem 0 2rem;
+  overflow: hidden;
+
+  .slide-title {
+    color: $accent-color;
+    text-align: center;
+    animation: slide-up 8s infinite forwards normal ease-in-out;
+
+    // h2 {
+    //   &:nth-child(1) {
+    //   }
+    //   &:nth-child(2) {
+    //   }
+    // }
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-41px);
+  }
+  100% {
+    transform: translateY(-82px);
+  }
+}

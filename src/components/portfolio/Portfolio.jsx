@@ -4,12 +4,13 @@ import "./portfolio.scss";
 import PFIMG01 from "../../assets/semiFinal.jpg";
 import PFIMG02 from "../../assets/final.jpg";
 import PFIMG03 from "../../assets/toy01.jpg";
+import SlideTitle from "../common/slideTitle/SlideTitle";
 
 const Portfolio = () => {
   return (
     <section id="portfolio">
-      <h4>My Recent Work</h4>
-      <h2 className="kor">프로젝트</h2>
+      <h4>Project</h4>
+      <SlideTitle engTitle="My Work" korTitle="작업한 프로젝트 입니다" />
 
       <div className="container portfolio__container">
         <PortfolioArticle
