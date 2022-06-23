@@ -1,3 +1,5 @@
+@import "../../../_variable.scss";
+
 .modal-outer {
   position: fixed;
   width: 100%;
@@ -14,7 +16,8 @@
     max-width: 90%;
     height: fit-content;
     padding: 2rem 1.5rem;
-    background-color: rgba($color: #000000, $alpha: 0.8);
+    background-color: rgba($color: #ffffff, $alpha: 0.8);
+    color: $font-color-black;
     backdrop-filter: blur(15px);
     text-align: center;
     position: absolute;

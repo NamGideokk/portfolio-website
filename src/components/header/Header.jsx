@@ -35,7 +35,7 @@ const Header = () => {
           <h1>프론트엔드 신입 개발자 남기덕입니다</h1>
         )}
 
-        <h3 className="text-light">front-end developer</h3>
+        <h3>front-end developer</h3>
 
         <HeaderSocials className="header__socials" />
 

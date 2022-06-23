@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import CV from "../../assets/cv.pdf";
 import Modal from "../common/modal/Modal";
 
 const CTA = () => {
