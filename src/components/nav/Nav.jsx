@@ -31,6 +31,7 @@ const Nav = () => {
         onClick={() => {
           setActiveNav("#");
         }}
+        title="home"
       >
         <GrHome />
       </a>
@@ -40,6 +41,7 @@ const Nav = () => {
         onClick={() => {
           setActiveNav("#about");
         }}
+        title="about"
       >
         <FiUser />
       </a>
@@ -49,24 +51,27 @@ const Nav = () => {
         onClick={() => {
           setActiveNav("#experience");
         }}
+        title="experience"
       >
         <BiBook />
       </a>
       <a
-        href="#want-to-be"
-        className={activeNav === "#want-to-be" ? "active" : ""}
+        href="#goal"
+        className={activeNav === "#goal" ? "active" : ""}
         onClick={() => {
-          setActiveNav("#want-to-be");
+          setActiveNav("#goal");
         }}
+        title="goal"
       >
         <MdOutlineTagFaces />
       </a>
       <a
-        href="#portfolio"
-        className={activeNav === "#portfolio" ? "active" : ""}
+        href="#project"
+        className={activeNav === "#project" ? "active" : ""}
         onClick={() => {
-          setActiveNav("#portfolio");
+          setActiveNav("#project");
         }}
+        title="project"
       >
         <BiNote />
       </a>
@@ -76,6 +81,7 @@ const Nav = () => {
         onClick={() => {
           setActiveNav("#contact");
         }}
+        title="contact"
       >
         <BiMessageSquareDots />
       </a>

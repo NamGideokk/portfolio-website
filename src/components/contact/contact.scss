@@ -19,6 +19,7 @@
       text-align: center;
       border: $border-trans;
       transition: 0.3s;
+      color: $font-color;
 
       &:hover {
         background-color: $accent-color;

@@ -21,11 +21,6 @@ const Contact = () => {
     const {
       target: { name, value },
     } = e;
-
-    if (name === "name") {
-      if (value.length > 0) {
-      }
-    }
   }
 
   const sendEmail = (e) => {

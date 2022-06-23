@@ -8,7 +8,7 @@ import SlideTitle from "../common/slideTitle/SlideTitle";
 
 const Portfolio = () => {
   return (
-    <section id="portfolio">
+    <section id="project">
       <main className="main__container">
         <h4>Project</h4>
         <SlideTitle engTitle="My Work" korTitle="작업한 프로젝트 입니다" />
