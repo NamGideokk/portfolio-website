@@ -3,7 +3,7 @@ import "./contact.scss";
 import { MdOutlineMail } from "react-icons/md";
 import { RiKakaoTalkFill } from "react-icons/ri";
 import { BsPhone } from "react-icons/bs";
-import Modal from "../modal/Modal";
+import Modal from "../common/modal/Modal";
 
 import emailjs from "emailjs-com";
 import { useRef } from "react";

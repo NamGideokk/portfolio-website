@@ -11,10 +11,23 @@ header {
   text-align: center;
   height: fit-content;
   position: relative;
-  padding-bottom: 10rem;
+  padding-bottom: 12rem;
 
-  h1 {
+  > h4 {
+    animation: opacity 2s;
+  }
+
+  > h1 {
     font-family: $font-kor;
+    animation: opacity 2s forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+  }
+
+  > h3 {
+    animation: opacity 2s forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
   }
 }
 
@@ -30,8 +43,18 @@ header {
   align-items: center;
   gap: 0.8rem;
   position: absolute;
-  left: 0;
+  left: -50rem;
   bottom: 3rem;
+  animation: left-bar 2.7s forwards ease-in-out;
+}
+
+@keyframes left-bar {
+  from {
+    left: -50rem;
+  }
+  to {
+    left: 0rem;
+  }
 }
 
 /* me */
@@ -43,23 +66,34 @@ header {
   margin: 0 auto;
   margin-top: 4rem;
   overflow: hidden;
+  animation: opacity 2s forwards;
+  animation-delay: 1s;
+  opacity: 0;
 }
 
 /* scroll down */
 .scroll__down {
   position: absolute;
-  right: -2.3rem;
+  // right: -2.3rem;
+  right: -50rem;
   bottom: 5rem;
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
+  animation: right-bar 2.7s forwards ease-in-out;
+}
+
+@keyframes right-bar {
+  from {
+    right: -50rem;
+  }
+  to {
+    right: -2.3rem;
+  }
 }
 
 /* 미디어 쿼리 (medium) */
 @media screen and (max-width: 1024px) {
-  header {
-    height: 68vh;
-  }
 }
 
 @media screen and (max-width: 712px) {
@@ -67,11 +101,8 @@ header {
 
 /* 미디어 쿼리 (small) */
 @media screen and (max-width: 600px) {
-  header {
-    height: 100vh;
-  }
-  .header__socials,
-  .scroll__down {
-    display: none;
-  }
+  // .header__socials,
+  // .scroll__down {
+  //   display: none;
+  // }
 }

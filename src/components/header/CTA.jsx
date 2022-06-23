@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import CV from "../../assets/cv.pdf";
-import Modal from "../modal/Modal";
+import Modal from "../common/modal/Modal";
 
 const CTA = () => {
   const [showAlert, setShowAlert] = useState(false);
@@ -9,7 +9,7 @@ const CTA = () => {
 
   function downloadHandler() {
     setShowAlert(true);
-    setText("이력서 업데이트 중입니다. 빠르게 업로드하겠습니다!");
+    setText("이력서 업데이트 중입니다.");
     setModalAnimation("modal-open-animation");
 
     setTimeout(() => {
