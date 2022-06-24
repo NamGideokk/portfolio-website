@@ -18,10 +18,15 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
 
   article {
     background-color: $bg-color-light;
     padding: 1.2rem;
+    width: 100%;
     transition: 0.3s;
     border-radius: 1rem;
     border: $border-trans;
