@@ -10,12 +10,13 @@ import { BiNote } from "react-icons/bi";
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("");
   const [className, setClassName] = useState("");
+  const [htmlHeight, setHtmlHeight] = useState(window.scrollY);
 
+  //event.path[1].pageYOffset
   function changeNavBg() {
-    if (window.scrollY > 150 && window.scrollY <= 7000) {
+    setHtmlHeight(window.scrollY);
+    if (htmlHeight > 150) {
       setClassName("nav-bgcolor");
-    } else if (window.scrollY > 7000) {
-      setClassName("nav-dis-none");
     } else {
       setClassName("");
     }
