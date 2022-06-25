@@ -13,13 +13,27 @@ const Nav = () => {
   const [htmlHeight, setHtmlHeight] = useState(window.scrollY);
 
   //event.path[1].pageYOffset
-  function changeNavBg() {
+  // html문서 전체 height - document.body.scrollHeight
+  function changeNavBg(event) {
     setHtmlHeight(window.scrollY);
     if (htmlHeight > 150) {
       setClassName("nav-bgcolor");
     } else {
       setClassName("");
     }
+
+    if (document.body.scrollHeight < window.scrollY + window.innerHeight) {
+      setClassName("nav-display-none");
+    } else {
+      setClassName("");
+    }
+    //   console.log("브라우저 뷰포트 height", event.path[1]);
+    // console.log("브라우저 뷰포트 height", event.path[1].innerHeight);
+    // console.log("브라우저 뷰포트 width", event.path[1].innerWidth);
+    // console.log(window.scrollY);
+    // console.log(window.innerHeight);
+    // console.log(document.body.scrollHeight);
+    //outerHeight, outerWidth : 브라우저 전체 사이즈 (뷰포트 외각까지)
   }
 
   window.addEventListener("scroll", changeNavBg);

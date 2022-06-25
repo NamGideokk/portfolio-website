@@ -41,6 +41,9 @@
 .nav-bgcolor {
   background: rgba(0, 0, 0, 0.3);
 }
+.nav-display-none {
+  display: none;
+}
 
 /* 미디어 쿼리 (medium) */
 @media screen and (max-width: 1024px) {
