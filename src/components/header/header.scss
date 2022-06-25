@@ -1,17 +1,18 @@
 @import "../../_variable";
 
 header {
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
+  min-height: 100vh;
+  max-height: fit-content;
+  padding-bottom: 5rem;
 }
 
 .header__container {
   text-align: center;
   height: fit-content;
   position: relative;
-  padding-bottom: 12rem;
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+  padding-bottom: 5rem;
 
   > h4 {
     color: $font-color-light;
@@ -98,13 +99,24 @@ header {
 @media screen and (max-width: 1024px) {
 }
 
-@media screen and (max-width: 712px) {
+@media screen and (max-width: 708px) {
+  .header__container {
+    > h1 {
+      font-size: 2rem;
+      line-height: 3rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
 }
 
 /* 미디어 쿼리 (small) */
 @media screen and (max-width: 600px) {
-  // .header__socials,
-  // .scroll__down {
-  //   display: none;
-  // }
+  .header__container {
+    padding-bottom: 0;
+  }
+  .header__socials,
+  .scroll__down {
+    display: none;
+  }
 }

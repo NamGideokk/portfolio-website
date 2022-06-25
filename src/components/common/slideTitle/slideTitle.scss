@@ -37,3 +37,14 @@
     transform: translateY(-6.1rem);
   }
 }
+
+/* 미디어 쿼리 (small) */
+@media screen and (max-width: 600px) {
+  .slide-title {
+    > h2 {
+      font-size: 1.5rem !important;
+      line-height: 3.063rem;
+      height: 3.063rem;
+    }
+  }
+}

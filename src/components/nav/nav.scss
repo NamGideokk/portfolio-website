@@ -2,15 +2,17 @@
 
 .nav {
   background-color: transparent;
-  width: max-content;
+  max-width: max-content;
+  width: 100vw;
   display: block;
   padding: 0.7rem 1.7rem;
-  z-index: 2;
+  z-index: 19;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
   bottom: 2rem;
   display: flex;
+  justify-content: center;
   gap: 0.8rem;
   border-radius: 3rem;
   backdrop-filter: blur(15px);
@@ -41,4 +43,19 @@
 
 .nav-dis-none {
   transform: translate(-50%, 200%);
+}
+
+/* 미디어 쿼리 (medium) */
+@media screen and (max-width: 1024px) {
+}
+
+/* 미디어 쿼리 (small) */
+@media screen and (max-width: 600px) {
+  nav {
+    a {
+      &:hover {
+        border-radius: 50% !important;
+      }
+    }
+  }
 }

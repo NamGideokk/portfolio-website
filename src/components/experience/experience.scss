@@ -23,7 +23,8 @@
   align-content: space-evenly;
   align-items: center;
 
-  article {
+  // article
+  > .experience__details {
     background-color: $bg-color-light;
     padding: 1.2rem;
     width: 100%;
@@ -98,10 +99,29 @@
     gap: 1rem;
   }
 
-  .experience__details:hover {
+  .experience__details {
+  }
+  &:hover {
     transform: translateY(-0.3rem) !important;
   }
 }
+
+@media screen and (max-width: 413px) {
+  .experience__details {
+    padding: 0.6rem !important;
+
+    .skill-icon {
+      font-size: 1.8rem;
+      width: 2rem;
+      margin-left: 0.3rem;
+    }
+    > h4 {
+      font-size: 0.9rem;
+      margin-top: 0.2rem !important;
+    }
+  }
+}
+
 .level-range {
   // -webkit-appearance: none;
   width: 100%;
