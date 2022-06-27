@@ -60,12 +60,12 @@ $width: fit-content;
     background-color: #cdcfd0;
 
     &:hover .project-image {
-      transform: translateY(-100%);
+      transform: translateY(-100%) translateY(380px);
     }
   }
 
   .project-image {
-    transition: transform 10s ease;
+    transition: transform 7s ease;
   }
 
   // 타이틀
@@ -102,6 +102,10 @@ $width: fit-content;
 
     .img__container {
       height: 230px !important;
+
+      &:hover .project-image {
+        transform: translateY(-100%) translateY(210px);
+      }
     }
   }
 }
