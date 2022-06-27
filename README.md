@@ -2,9 +2,9 @@
 
 　
 
-- 💻 https://namgideokk.github.io/portfolio-website/
+- https://namgideokk.github.io/portfolio-website/
 
-- 🛠 Skill to use  ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![SCSS](https://img.shields.io/badge/SCSS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+- Skill to use ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![SCSS](https://img.shields.io/badge/SCSS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 
 - 반응형 웹사이트 ( iPhone SE 375 x 667 까지 대응 )
  
