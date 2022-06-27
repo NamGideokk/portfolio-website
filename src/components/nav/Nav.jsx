@@ -16,13 +16,15 @@ const Nav = () => {
   // html문서 전체 height - document.body.scrollHeight
   function changeNavBg(event) {
     setHtmlHeight(window.scrollY);
-    if (htmlHeight > 150) {
+    if (
+      htmlHeight > 150 &&
+      document.body.scrollHeight > window.scrollY + window.innerHeight
+    ) {
       setClassName("nav-bgcolor");
-    } else {
-      setClassName("");
-    }
-
-    if (document.body.scrollHeight < window.scrollY + window.innerHeight) {
+    } else if (
+      document.body.scrollHeight <
+      window.scrollY + window.innerHeight
+    ) {
       setClassName("nav-display-none");
     } else {
       setClassName("");
