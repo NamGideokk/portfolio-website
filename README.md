@@ -36,7 +36,7 @@
 
 ![image](https://user-images.githubusercontent.com/96227239/175953072-9bd0e204-521d-446b-af26-a4c2c22d8cf8.png)
 
-> https://fe-developer-ngd.tistory.com/2
+> EmailJS - https://fe-developer-ngd.tistory.com/2
 > 
-> https://fe-developer-ngd.tistory.com/5
+> Google 로그인 UI - https://fe-developer-ngd.tistory.com/5
 
