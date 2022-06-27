@@ -22,12 +22,6 @@ const About = () => {
           <div className="about__content">
             <div className="about__cards">
               <article className="about__card">
-                <TbRun className="about__icon" />
-                <h5>Career</h5>
-                <small>신입</small>
-              </article>
-
-              <article className="about__card">
                 <FaGraduationCap className="about__icon" />
                 <h5>Education</h5>
                 <small>
@@ -41,6 +35,12 @@ const About = () => {
                 <IoMdTrophy className="about__icon" />
                 <h5>Awards</h5>
                 <small>프로젝트 우수상 2회 수상</small>
+              </article>
+
+              <article className="about__card">
+                <TbRun className="about__icon" />
+                <h5>Career</h5>
+                <small>신입</small>
               </article>
             </div>
 
